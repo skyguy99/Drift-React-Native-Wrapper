@@ -1,0 +1,1131 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A30BE635C2A942A8D04344D /* Pods_DriftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376DB1A9D502953CD6D8325F /* Pods_DriftTests.framework */; };
+		2CF43EA31C7E045F008E6748 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF43EA21C7E045F008E6748 /* ColorPalette.swift */; };
+		2CF43EA71C7E056F008E6748 /* DriftImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF43EA61C7E056F008E6748 /* DriftImages.xcassets */; };
+		492F77EC1F55A72300A05094 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F77E71F55A72300A05094 /* Channel.swift */; };
+		492F77ED1F55A72300A05094 /* Presence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F77E81F55A72300A05094 /* Presence.swift */; };
+		492F77EE1F55A72300A05094 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F77E91F55A72300A05094 /* Push.swift */; };
+		492F77EF1F55A72300A05094 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F77EA1F55A72300A05094 /* Response.swift */; };
+		492F77F01F55A72300A05094 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F77EB1F55A72300A05094 /* Socket.swift */; };
+		630205181C52A24E00C02F5E /* CampaignsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630205171C52A24E00C02F5E /* CampaignsManager.swift */; };
+		6302051A1C52AC5100C02F5E /* DriftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630205191C52AC5100C02F5E /* DriftManager.swift */; };
+		6302051C1C52AD7900C02F5E /* Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302051B1C52AD7900C02F5E /* Embed.swift */; };
+		6302051E1C56739000C02F5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302051D1C56739000C02F5E /* User.swift */; };
+		6306B51E1C5F91150003F9D3 /* NPSResponseAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306B51D1C5F91150003F9D3 /* NPSResponseAttributes.swift */; };
+		6306F4211D6379CC00722D15 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306F41F1D6379CC00722D15 /* NewMessageView.swift */; };
+		6306F4221D6379CC00722D15 /* NewMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6306F4201D6379CC00722D15 /* NewMessageView.xib */; };
+		6306F42E1D63E68800722D15 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306F42D1D63E68800722D15 /* UserManager.swift */; };
+		630E89621C57944400195062 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E89611C57944400195062 /* PresentationManager.swift */; };
+		630E89651C57B99000195062 /* AnnouncementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630E89641C57B99000195062 /* AnnouncementView.xib */; };
+		630E89671C57B9AC00195062 /* AnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E89661C57B9AC00195062 /* AnnouncementView.swift */; };
+		630E89691C57C77300195062 /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E89681C57C77300195062 /* NibLoader.swift */; };
+		630E896D1C57E63300195062 /* NPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E896C1C57E63300195062 /* NPSView.swift */; };
+		630E896F1C57E64C00195062 /* NPSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630E896E1C57E64C00195062 /* NPSView.xib */; };
+		630E89711C57E90300195062 /* NPSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E89701C57E90300195062 /* NPSButton.swift */; };
+		631164F71C6124CE00DF9AD9 /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631164F61C6124CE00DF9AD9 /* RequestTests.swift */; };
+		6311F3541C89D18100F1F438 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6311F3531C89D18100F1F438 /* APITests.swift */; };
+		6329CABC1C58E6830059C678 /* NPSContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329CABB1C58E6830059C678 /* NPSContainerView.swift */; };
+		6329CABE1C58E68F0059C678 /* NPSContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6329CABD1C58E68F0059C678 /* NPSContainerView.xib */; };
+		6329CAC11C5933590059C678 /* NPSCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6329CAC01C5933590059C678 /* NPSCommentView.xib */; };
+		6329CAC31C59336E0059C678 /* NPSCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329CAC21C59336E0059C678 /* NPSCommentView.swift */; };
+		6329CAC51C5A91310059C678 /* DriftDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329CAC41C5A91310059C678 /* DriftDataStore.swift */; };
+		632EC55B1C7E070B00D703D4 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EC55A1C7E070B00D703D4 /* ModelTests.swift */; };
+		632EC55D1C7E088300D703D4 /* JSONStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EC55C1C7E088300D703D4 /* JSONStore.swift */; };
+		63356A3F1C529C530064F652 /* Drift.h in Headers */ = {isa = PBXBuildFile; fileRef = 63356A3D1C529C530064F652 /* Drift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63356A421C529C610064F652 /* Drift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63356A411C529C610064F652 /* Drift.swift */; };
+		63356A4B1C529C760064F652 /* AnnouncementAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63356A471C529C760064F652 /* AnnouncementAttributes.swift */; };
+		63356A4C1C529C760064F652 /* CTA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63356A481C529C760064F652 /* CTA.swift */; };
+		63356A4D1C529C760064F652 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63356A491C529C760064F652 /* Campaign.swift */; };
+		63356A4E1C529C760064F652 /* NPSAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63356A4A1C529C760064F652 /* NPSAttributes.swift */; };
+		63356A541C52A0D20064F652 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63356A531C52A0D20064F652 /* UIKit.framework */; };
+		63359F9D1C774C22007321DA /* AnnouncementExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63359F9C1C774C22007321DA /* AnnouncementExpandedView.swift */; };
+		63359F9F1C774C31007321DA /* AnnouncementExpandedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63359F9E1C774C31007321DA /* AnnouncementExpandedView.xib */; };
+		633920D01C62514F00C3A3C2 /* CampaignResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633920CF1C62514F00C3A3C2 /* CampaignResponseManager.swift */; };
+		633920D51C62879100C3A3C2 /* CampaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633920D41C62879100C3A3C2 /* CampaignView.swift */; };
+		634950DF1C511A410097C474 /* Drift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634950D41C511A410097C474 /* Drift.framework */; };
+		635462E51EDF0C0B0012358E /* DriftAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635462E31EDF0C0B0012358E /* DriftAPIManager.swift */; };
+		635462E61EDF0C0B0012358E /* DriftAPIURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635462E41EDF0C0B0012358E /* DriftAPIURLRouter.swift */; };
+		635462E81EDF0F2B0012358E /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635462E71EDF0F2B0012358E /* SocketManager.swift */; };
+		635462EA1EDF204E0012358E /* SocketAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635462E91EDF204E0012358E /* SocketAuth.swift */; };
+		6362426A1C7FBCB400632F0E /* NPSCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636242691C7FBCB400632F0E /* NPSCompleteView.swift */; };
+		6362426C1C7FBCC300632F0E /* NPSCompleteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362426B1C7FBCC300632F0E /* NPSCompleteView.xib */; };
+		637E48FF1C9A08040067F105 /* LayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C257381C9A00AE003C4C81 /* LayerKit.framework */; };
+		6387309A1C7E85EF00105867 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638730991C7E85EF00105867 /* TopController.swift */; };
+		63BBABB41C7C9D850014768A /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBABB31C7C9D850014768A /* ErrorManager.swift */; };
+		63BBABB61C7CD6210014768A /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBABB51C7CD6210014768A /* ColorHelper.swift */; };
+		63F95DBF1C5B8676003BCEE0 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F95DBE1C5B8676003BCEE0 /* Auth.swift */; };
+		A80A643E1D464CDE00A41A41 /* ObjectValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A643D1D464CDE00A41A41 /* ObjectValidator.swift */; };
+		A80A64421D46534D00A41A41 /* DriftDateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A64411D46534D00A41A41 /* DriftDateTransformer.swift */; };
+		A80A64441D465E4800A41A41 /* InboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A64431D465E4800A41A41 /* InboxManager.swift */; };
+		A80A64461D46655900A41A41 /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A64451D46655900A41A41 /* Inbox.swift */; };
+		A80A64481D4665E500A41A41 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A64471D4665E500A41A41 /* Conversation.swift */; };
+		A80A644A1D46671B00A41A41 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A64491D46671B00A41A41 /* Message.swift */; };
+		A80A644C1D466B3600A41A41 /* InboxSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A644B1D466B3600A41A41 /* InboxSubscription.swift */; };
+		A80A644E1D466B5E00A41A41 /* ConversationSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A644D1D466B5E00A41A41 /* ConversationSubscription.swift */; };
+		A80A64501D466B7C00A41A41 /* MessageSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A644F1D466B7C00A41A41 /* MessageSubscription.swift */; };
+		A82CCE0E1D4B731A0043D3C2 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82CCE0D1D4B731A0043D3C2 /* Attachment.swift */; };
+		A82CF5681D42585D00D570FF /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82CF5671D42585D00D570FF /* ObjectMapper.framework */; };
+		A83E41671D50D20800B4EA35 /* MessageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83E41651D50D20800B4EA35 /* MessageTableHeaderView.xib */; };
+		A83E41681D50D20800B4EA35 /* MessageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E41661D50D20800B4EA35 /* MessageTableHeaderView.swift */; };
+		A85387161D4A4F5100C1D3C1 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85387141D4A4F5100C1D3C1 /* ConversationListViewController.swift */; };
+		A85387171D4A4F5100C1D3C1 /* ConversationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85387151D4A4F5100C1D3C1 /* ConversationListViewController.xib */; };
+		A853871B1D4A8EAE00C1D3C1 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85387191D4A8EAE00C1D3C1 /* ConversationViewController.swift */; };
+		A86A47251D50D53F008C59C0 /* DriftDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A47241D50D53F008C59C0 /* DriftDateFormatter.swift */; };
+		A87272111EEAE16700A476FB /* CampaignWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87272101EEAE16700A476FB /* CampaignWrapper.swift */; };
+		A88682DB1EE9791B00E396D8 /* ConversationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88682DA1EE9791B00E396D8 /* ConversationsManager.swift */; };
+		A88682DD1EE982D600E396D8 /* EnrichedConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88682DC1EE982D600E396D8 /* EnrichedConversation.swift */; };
+		A8B6FBAF1DE74631002F2321 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B6FBAE1DE74631002F2321 /* ImageManager.swift */; };
+		A8B6FBB11DE74A9A002F2321 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B6FBB01DE74A9A002F2321 /* AlamofireImage.framework */; };
+		A8B6FBB31DE74AAB002F2321 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B6FBB21DE74AAB002F2321 /* Alamofire.framework */; };
+		A8BC1BAD1DDCB0DE0049968E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC1BAC1DDCB0DE0049968E /* GradientView.swift */; };
+		A8C6ADED1D632CD10024CFDC /* ConversationEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C6ADEC1D632CD10024CFDC /* ConversationEmptyStateView.swift */; };
+		A8C6ADEF1D632CED0024CFDC /* ConversationEmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C6ADEE1D632CED0024CFDC /* ConversationEmptyStateView.xib */; };
+		A8DBDD281D4259BF00E827CF /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82CF5671D42585D00D570FF /* ObjectMapper.framework */; };
+		A8DECB341DF9AE5F00CE008D /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DECB331DF9AE5F00CE008D /* Context.swift */; };
+		A8DECB361DF9B5BF00CE008D /* UIDevice+ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DECB351DF9B5BF00CE008D /* UIDevice+ModelName.swift */; };
+		A8E5A4741EF02FAB00113113 /* OpenHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5A4721EF02FAB00113113 /* OpenHours.swift */; };
+		A8E705771EF28D6C00BC1429 /* OpenHoursHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E705761EF28D6C00BC1429 /* OpenHoursHelpers.swift */; };
+		A8E705791EF2C77900BC1429 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E705781EF2C77900BC1429 /* ReachabilityManager.swift */; };
+		A8E7057B1EF4051F00BC1429 /* ConnectionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7057A1EF4051F00BC1429 /* ConnectionBarView.swift */; };
+		A8E7057D1EF4054000BC1429 /* ConnectionBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E7057C1EF4054000BC1429 /* ConnectionBarView.xib */; };
+		A8E705801EF80BC700BC1429 /* ConversationMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E7057E1EF80BC700BC1429 /* ConversationMessageTableViewCell.xib */; };
+		A8E705811EF80BC700BC1429 /* ConversationMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7057F1EF80BC700BC1429 /* ConversationMessageTableViewCell.swift */; };
+		A8E705831EF815C500BC1429 /* AvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E705821EF815C500BC1429 /* AvatarImage.swift */; };
+		A8E705861EF8192500BC1429 /* AttachmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E705841EF8192500BC1429 /* AttachmentCollectionViewCell.xib */; };
+		A8E705871EF8192500BC1429 /* AttachmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E705851EF8192500BC1429 /* AttachmentCollectionViewCell.swift */; };
+		A8F589A31D478F0A0043DB8D /* ConversationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F589A11D478F0A0043DB8D /* ConversationListTableViewCell.swift */; };
+		A8F589A41D478F0A0043DB8D /* ConversationListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8F589A21D478F0A0043DB8D /* ConversationListTableViewCell.xib */; };
+		DE4BB2DAEE68729ECCFBF587 /* Pods_Drift_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D067B1B1C2147D16643E68C /* Pods_Drift_SDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		634950E01C511A410097C474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634950CB1C511A410097C474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634950D31C511A410097C474;
+			remoteInfo = Driftt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		634951201C511D5A0097C474 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C22BE29447B902070F10D55 /* Pods-Drift-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drift-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drift-SDK/Pods-Drift-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		0F7B8686E6ADBA835CE5CB39 /* Pods-Drift-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drift-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drift-SDK/Pods-Drift-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		2CF43EA21C7E045F008E6748 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = Drift/UI/ColorPalette.swift; sourceTree = SOURCE_ROOT; };
+		2CF43EA61C7E056F008E6748 /* DriftImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = DriftImages.xcassets; path = Drift/UI/DriftImages.xcassets; sourceTree = SOURCE_ROOT; };
+		376DB1A9D502953CD6D8325F /* Pods_DriftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		492F77E71F55A72300A05094 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = Drift/Birdsong/Channel.swift; sourceTree = SOURCE_ROOT; };
+		492F77E81F55A72300A05094 /* Presence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presence.swift; path = Drift/Birdsong/Presence.swift; sourceTree = SOURCE_ROOT; };
+		492F77E91F55A72300A05094 /* Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Push.swift; path = Drift/Birdsong/Push.swift; sourceTree = SOURCE_ROOT; };
+		492F77EA1F55A72300A05094 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Drift/Birdsong/Response.swift; sourceTree = SOURCE_ROOT; };
+		492F77EB1F55A72300A05094 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Drift/Birdsong/Socket.swift; sourceTree = SOURCE_ROOT; };
+		630205171C52A24E00C02F5E /* CampaignsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignsManager.swift; path = Drift/Managers/CampaignsManager.swift; sourceTree = SOURCE_ROOT; };
+		630205191C52AC5100C02F5E /* DriftManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftManager.swift; path = Drift/Managers/DriftManager.swift; sourceTree = SOURCE_ROOT; };
+		6302051B1C52AD7900C02F5E /* Embed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Embed.swift; path = Drift/Models/Embed.swift; sourceTree = SOURCE_ROOT; };
+		6302051D1C56739000C02F5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Drift/Models/User.swift; sourceTree = SOURCE_ROOT; };
+		6306B51D1C5F91150003F9D3 /* NPSResponseAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSResponseAttributes.swift; path = Drift/Models/NPSResponseAttributes.swift; sourceTree = SOURCE_ROOT; };
+		6306F41F1D6379CC00722D15 /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMessageView.swift; path = "Drift/UI/New Message View/NewMessageView.swift"; sourceTree = SOURCE_ROOT; };
+		6306F4201D6379CC00722D15 /* NewMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewMessageView.xib; path = "Drift/UI/New Message View/NewMessageView.xib"; sourceTree = SOURCE_ROOT; };
+		6306F42D1D63E68800722D15 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserManager.swift; path = Drift/Managers/UserManager.swift; sourceTree = SOURCE_ROOT; };
+		630E89611C57944400195062 /* PresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = Drift/Managers/PresentationManager.swift; sourceTree = SOURCE_ROOT; };
+		630E89641C57B99000195062 /* AnnouncementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnnouncementView.xib; path = Drift/UI/NotificationView/AnnouncementView.xib; sourceTree = SOURCE_ROOT; };
+		630E89661C57B9AC00195062 /* AnnouncementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementView.swift; path = Drift/UI/NotificationView/AnnouncementView.swift; sourceTree = SOURCE_ROOT; };
+		630E89681C57C77300195062 /* NibLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoader.swift; path = Drift/UI/NibLoader.swift; sourceTree = SOURCE_ROOT; };
+		630E896C1C57E63300195062 /* NPSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSView.swift; path = Drift/UI/NPS/NPSView.swift; sourceTree = SOURCE_ROOT; };
+		630E896E1C57E64C00195062 /* NPSView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NPSView.xib; path = Drift/UI/NPS/NPSView.xib; sourceTree = SOURCE_ROOT; };
+		630E89701C57E90300195062 /* NPSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSButton.swift; path = Drift/UI/NPS/NPSButton.swift; sourceTree = SOURCE_ROOT; };
+		631164F61C6124CE00DF9AD9 /* RequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestTests.swift; path = DriftTests/RequestTests.swift; sourceTree = SOURCE_ROOT; };
+		6311F3531C89D18100F1F438 /* APITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APITests.swift; path = DriftTests/APITests.swift; sourceTree = SOURCE_ROOT; };
+		6329CABB1C58E6830059C678 /* NPSContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSContainerView.swift; path = "Drift/UI/NPS Container View/NPSContainerView.swift"; sourceTree = SOURCE_ROOT; };
+		6329CABD1C58E68F0059C678 /* NPSContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NPSContainerView.xib; path = "Drift/UI/NPS Container View/NPSContainerView.xib"; sourceTree = SOURCE_ROOT; };
+		6329CAC01C5933590059C678 /* NPSCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NPSCommentView.xib; path = "Drift/UI/NPS Comment View/NPSCommentView.xib"; sourceTree = SOURCE_ROOT; };
+		6329CAC21C59336E0059C678 /* NPSCommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSCommentView.swift; path = "Drift/UI/NPS Comment View/NPSCommentView.swift"; sourceTree = SOURCE_ROOT; };
+		6329CAC41C5A91310059C678 /* DriftDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftDataStore.swift; path = Drift/Managers/DriftDataStore.swift; sourceTree = SOURCE_ROOT; };
+		632EC55A1C7E070B00D703D4 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelTests.swift; path = DriftTests/ModelTests.swift; sourceTree = SOURCE_ROOT; };
+		632EC55C1C7E088300D703D4 /* JSONStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONStore.swift; path = DriftTests/JSONStore.swift; sourceTree = SOURCE_ROOT; };
+		63356A3D1C529C530064F652 /* Drift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Drift.h; path = Drift/Drift.h; sourceTree = SOURCE_ROOT; };
+		63356A3E1C529C530064F652 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Drift/Info.plist; sourceTree = SOURCE_ROOT; };
+		63356A411C529C610064F652 /* Drift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drift.swift; path = Drift/Public/Drift.swift; sourceTree = SOURCE_ROOT; };
+		63356A471C529C760064F652 /* AnnouncementAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementAttributes.swift; path = Drift/Models/AnnouncementAttributes.swift; sourceTree = SOURCE_ROOT; };
+		63356A481C529C760064F652 /* CTA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTA.swift; path = Drift/Models/CTA.swift; sourceTree = SOURCE_ROOT; };
+		63356A491C529C760064F652 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Campaign.swift; path = Drift/Models/Campaign.swift; sourceTree = SOURCE_ROOT; };
+		63356A4A1C529C760064F652 /* NPSAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSAttributes.swift; path = Drift/Models/NPSAttributes.swift; sourceTree = SOURCE_ROOT; };
+		63356A501C529DD80064F652 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DriftTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		63356A531C52A0D20064F652 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63359F9C1C774C22007321DA /* AnnouncementExpandedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementExpandedView.swift; path = Drift/UI/NotificationView/AnnouncementExpandedView.swift; sourceTree = SOURCE_ROOT; };
+		63359F9E1C774C31007321DA /* AnnouncementExpandedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnnouncementExpandedView.xib; path = Drift/UI/NotificationView/AnnouncementExpandedView.xib; sourceTree = SOURCE_ROOT; };
+		633920CF1C62514F00C3A3C2 /* CampaignResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignResponseManager.swift; path = Drift/Managers/CampaignResponseManager.swift; sourceTree = SOURCE_ROOT; };
+		633920D41C62879100C3A3C2 /* CampaignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignView.swift; path = Drift/UI/CampaignView.swift; sourceTree = SOURCE_ROOT; };
+		634950D41C511A410097C474 /* Drift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634950DE1C511A410097C474 /* DriftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		635462E31EDF0C0B0012358E /* DriftAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftAPIManager.swift; path = Drift/Managers/DriftAPIManager.swift; sourceTree = SOURCE_ROOT; };
+		635462E41EDF0C0B0012358E /* DriftAPIURLRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftAPIURLRouter.swift; path = Drift/Managers/DriftAPIURLRouter.swift; sourceTree = SOURCE_ROOT; };
+		635462E71EDF0F2B0012358E /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketManager.swift; path = Drift/Managers/SocketManager.swift; sourceTree = SOURCE_ROOT; };
+		635462E91EDF204E0012358E /* SocketAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAuth.swift; path = Drift/Models/SocketAuth.swift; sourceTree = SOURCE_ROOT; };
+		636242691C7FBCB400632F0E /* NPSCompleteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NPSCompleteView.swift; path = "Drift/UI/NPS Complete View/NPSCompleteView.swift"; sourceTree = SOURCE_ROOT; };
+		6362426B1C7FBCC300632F0E /* NPSCompleteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NPSCompleteView.xib; path = "Drift/UI/NPS Complete View/NPSCompleteView.xib"; sourceTree = SOURCE_ROOT; };
+		638730991C7E85EF00105867 /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopController.swift; path = Drift/Helpers/TopController.swift; sourceTree = SOURCE_ROOT; };
+		63BBABB31C7C9D850014768A /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorManager.swift; path = Drift/Managers/ErrorManager.swift; sourceTree = SOURCE_ROOT; };
+		63BBABB51C7CD6210014768A /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorHelper.swift; path = Drift/Helpers/ColorHelper.swift; sourceTree = SOURCE_ROOT; };
+		63C257361C9A009E003C4C81 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = Carthage/Build/iOS/Gloss.framework; sourceTree = "<group>"; };
+		63C257381C9A00AE003C4C81 /* LayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayerKit.framework; path = "Carthage/Checkouts/releases-ios/LayerKit.framework"; sourceTree = "<group>"; };
+		63F95DBE1C5B8676003BCEE0 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Drift/Models/Auth.swift; sourceTree = SOURCE_ROOT; };
+		6CA1C57137B58327E8ED453E /* Pods-Drift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drift/Pods-Drift.release.xcconfig"; sourceTree = "<group>"; };
+		7D067B1B1C2147D16643E68C /* Pods_Drift_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drift_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		827DB2871F99163085B5B96C /* Pods_Drift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E01BE3EE4C4FBBC0B0CF127 /* Pods-DriftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DriftTests/Pods-DriftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A80A643D1D464CDE00A41A41 /* ObjectValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectValidator.swift; path = Drift/Helpers/ObjectValidator.swift; sourceTree = SOURCE_ROOT; };
+		A80A64411D46534D00A41A41 /* DriftDateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftDateTransformer.swift; path = Drift/Helpers/DriftDateTransformer.swift; sourceTree = SOURCE_ROOT; };
+		A80A64431D465E4800A41A41 /* InboxManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxManager.swift; path = Drift/Managers/InboxManager.swift; sourceTree = SOURCE_ROOT; };
+		A80A64451D46655900A41A41 /* Inbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inbox.swift; path = Drift/Models/Inbox.swift; sourceTree = SOURCE_ROOT; };
+		A80A64471D4665E500A41A41 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conversation.swift; path = Drift/Models/Conversation.swift; sourceTree = SOURCE_ROOT; };
+		A80A64491D46671B00A41A41 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Drift/Models/Message.swift; sourceTree = SOURCE_ROOT; };
+		A80A644B1D466B3600A41A41 /* InboxSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxSubscription.swift; path = Drift/Models/InboxSubscription.swift; sourceTree = SOURCE_ROOT; };
+		A80A644D1D466B5E00A41A41 /* ConversationSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationSubscription.swift; path = Drift/Models/ConversationSubscription.swift; sourceTree = SOURCE_ROOT; };
+		A80A644F1D466B7C00A41A41 /* MessageSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageSubscription.swift; path = Drift/Models/MessageSubscription.swift; sourceTree = SOURCE_ROOT; };
+		A82CCE0D1D4B731A0043D3C2 /* Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = Drift/Models/Attachment.swift; sourceTree = SOURCE_ROOT; };
+		A82CF5671D42585D00D570FF /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Drift-fazaqbkkelkzfnbpeedxtxrmdjjs/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		A83E41651D50D20800B4EA35 /* MessageTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageTableHeaderView.xib; path = "Drift/UI/Conversation View/MessageTableHeaderView.xib"; sourceTree = SOURCE_ROOT; };
+		A83E41661D50D20800B4EA35 /* MessageTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageTableHeaderView.swift; path = "Drift/UI/Conversation View/MessageTableHeaderView.swift"; sourceTree = SOURCE_ROOT; };
+		A85387141D4A4F5100C1D3C1 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationListViewController.swift; path = "Drift/UI/Conversation List View/ConversationListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A85387151D4A4F5100C1D3C1 /* ConversationListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConversationListViewController.xib; path = "Drift/UI/Conversation List View/ConversationListViewController.xib"; sourceTree = SOURCE_ROOT; };
+		A85387191D4A8EAE00C1D3C1 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationViewController.swift; path = "Drift/UI/Conversation View/ConversationViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A86A47241D50D53F008C59C0 /* DriftDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftDateFormatter.swift; path = Drift/Helpers/DriftDateFormatter.swift; sourceTree = SOURCE_ROOT; };
+		A87272101EEAE16700A476FB /* CampaignWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignWrapper.swift; path = Drift/Models/CampaignWrapper.swift; sourceTree = SOURCE_ROOT; };
+		A88682DA1EE9791B00E396D8 /* ConversationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationsManager.swift; path = Drift/Managers/ConversationsManager.swift; sourceTree = SOURCE_ROOT; };
+		A88682DC1EE982D600E396D8 /* EnrichedConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnrichedConversation.swift; path = Drift/Models/EnrichedConversation.swift; sourceTree = SOURCE_ROOT; };
+		A8B6FBAE1DE74631002F2321 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageManager.swift; path = Drift/Helpers/ImageManager.swift; sourceTree = SOURCE_ROOT; };
+		A8B6FBB01DE74A9A002F2321 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Pods/../build/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		A8B6FBB21DE74AAB002F2321 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Drift-fazaqbkkelkzfnbpeedxtxrmdjjs/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		A8BC1BAC1DDCB0DE0049968E /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Drift/Helpers/GradientView.swift; sourceTree = SOURCE_ROOT; };
+		A8C6ADEC1D632CD10024CFDC /* ConversationEmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationEmptyStateView.swift; path = "Drift/UI/Conversation View/ConversationEmptyStateView.swift"; sourceTree = SOURCE_ROOT; };
+		A8C6ADEE1D632CED0024CFDC /* ConversationEmptyStateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConversationEmptyStateView.xib; path = "Drift/UI/Conversation View/ConversationEmptyStateView.xib"; sourceTree = SOURCE_ROOT; };
+		A8DECB331DF9AE5F00CE008D /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Drift/Models/Context.swift; sourceTree = SOURCE_ROOT; };
+		A8DECB351DF9B5BF00CE008D /* UIDevice+ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+ModelName.swift"; path = "Drift/Helpers/UIDevice+ModelName.swift"; sourceTree = SOURCE_ROOT; };
+		A8E5A4721EF02FAB00113113 /* OpenHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenHours.swift; path = Drift/Models/OpenHours.swift; sourceTree = SOURCE_ROOT; };
+		A8E705761EF28D6C00BC1429 /* OpenHoursHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenHoursHelpers.swift; path = Drift/Models/OpenHoursHelpers.swift; sourceTree = SOURCE_ROOT; };
+		A8E705781EF2C77900BC1429 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityManager.swift; path = Drift/Managers/ReachabilityManager.swift; sourceTree = SOURCE_ROOT; };
+		A8E7057A1EF4051F00BC1429 /* ConnectionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionBarView.swift; path = "Drift/UI/Conversation View/ConnectionBarView.swift"; sourceTree = SOURCE_ROOT; };
+		A8E7057C1EF4054000BC1429 /* ConnectionBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConnectionBarView.xib; path = "Drift/UI/Conversation View/ConnectionBarView.xib"; sourceTree = SOURCE_ROOT; };
+		A8E7057E1EF80BC700BC1429 /* ConversationMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConversationMessageTableViewCell.xib; path = "Drift/UI/Conversation View/Conversation Cells/ConversationMessageTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		A8E7057F1EF80BC700BC1429 /* ConversationMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationMessageTableViewCell.swift; path = "Drift/UI/Conversation View/Conversation Cells/ConversationMessageTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		A8E705821EF815C500BC1429 /* AvatarImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarImage.swift; path = Drift/Helpers/AvatarImage.swift; sourceTree = SOURCE_ROOT; };
+		A8E705841EF8192500BC1429 /* AttachmentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttachmentCollectionViewCell.xib; path = "Drift/UI/Conversation View/Conversation Cells/AttachmentCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		A8E705851EF8192500BC1429 /* AttachmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttachmentCollectionViewCell.swift; path = "Drift/UI/Conversation View/Conversation Cells/AttachmentCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		A8F589A11D478F0A0043DB8D /* ConversationListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationListTableViewCell.swift; path = "Drift/UI/Conversation List View/List View Cell/ConversationListTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		A8F589A21D478F0A0043DB8D /* ConversationListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConversationListTableViewCell.xib; path = "Drift/UI/Conversation List View/List View Cell/ConversationListTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		B830EE3166A8EBB93E22850F /* Pods-DriftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DriftTests/Pods-DriftTests.release.xcconfig"; sourceTree = "<group>"; };
+		D05CA385937F3836AC8E1B8A /* Pods-Drift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drift/Pods-Drift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		634950D01C511A410097C474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B6FBB31DE74AAB002F2321 /* Alamofire.framework in Frameworks */,
+				A8B6FBB11DE74A9A002F2321 /* AlamofireImage.framework in Frameworks */,
+				A82CF5681D42585D00D570FF /* ObjectMapper.framework in Frameworks */,
+				63356A541C52A0D20064F652 /* UIKit.framework in Frameworks */,
+				DE4BB2DAEE68729ECCFBF587 /* Pods_Drift_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634950DB1C511A410097C474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DBDD281D4259BF00E827CF /* ObjectMapper.framework in Frameworks */,
+				634950DF1C511A410097C474 /* Drift.framework in Frameworks */,
+				637E48FF1C9A08040067F105 /* LayerKit.framework in Frameworks */,
+				1A30BE635C2A942A8D04344D /* Pods_DriftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492F77E61F55A70200A05094 /* Birdsong */ = {
+			isa = PBXGroup;
+			children = (
+				492F77E71F55A72300A05094 /* Channel.swift */,
+				492F77E81F55A72300A05094 /* Presence.swift */,
+				492F77E91F55A72300A05094 /* Push.swift */,
+				492F77EA1F55A72300A05094 /* Response.swift */,
+				492F77EB1F55A72300A05094 /* Socket.swift */,
+			);
+			name = Birdsong;
+			sourceTree = "<group>";
+		};
+		6306F41E1D63798700722D15 /* New Message View */ = {
+			isa = PBXGroup;
+			children = (
+				6306F41F1D6379CC00722D15 /* NewMessageView.swift */,
+				6306F4201D6379CC00722D15 /* NewMessageView.xib */,
+			);
+			name = "New Message View";
+			sourceTree = "<group>";
+		};
+		630E89631C57B2E400195062 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6306F41E1D63798700722D15 /* New Message View */,
+				A85387181D4A8E8000C1D3C1 /* Conversation View */,
+				A80A64541D47779400A41A41 /* Conversation List View */,
+				636242681C7FBC9700632F0E /* NPS Complete View */,
+				2CF43EA61C7E056F008E6748 /* DriftImages.xcassets */,
+				6329CABF1C5933400059C678 /* NPS Comment View */,
+				6329CABA1C58E6540059C678 /* NPS ContainerView */,
+				630E896B1C57E60400195062 /* NPS */,
+				630E896A1C57E5F300195062 /* Announcement View */,
+				630E89681C57C77300195062 /* NibLoader.swift */,
+				2CF43EA21C7E045F008E6748 /* ColorPalette.swift */,
+				633920D41C62879100C3A3C2 /* CampaignView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		630E896A1C57E5F300195062 /* Announcement View */ = {
+			isa = PBXGroup;
+			children = (
+				630E89641C57B99000195062 /* AnnouncementView.xib */,
+				630E89661C57B9AC00195062 /* AnnouncementView.swift */,
+				63359F9C1C774C22007321DA /* AnnouncementExpandedView.swift */,
+				63359F9E1C774C31007321DA /* AnnouncementExpandedView.xib */,
+			);
+			name = "Announcement View";
+			sourceTree = "<group>";
+		};
+		630E896B1C57E60400195062 /* NPS */ = {
+			isa = PBXGroup;
+			children = (
+				630E896C1C57E63300195062 /* NPSView.swift */,
+				630E896E1C57E64C00195062 /* NPSView.xib */,
+				630E89701C57E90300195062 /* NPSButton.swift */,
+			);
+			name = NPS;
+			sourceTree = "<group>";
+		};
+		6329CABA1C58E6540059C678 /* NPS ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				6329CABB1C58E6830059C678 /* NPSContainerView.swift */,
+				6329CABD1C58E68F0059C678 /* NPSContainerView.xib */,
+			);
+			name = "NPS ContainerView";
+			sourceTree = "<group>";
+		};
+		6329CABF1C5933400059C678 /* NPS Comment View */ = {
+			isa = PBXGroup;
+			children = (
+				6329CAC01C5933590059C678 /* NPSCommentView.xib */,
+				6329CAC21C59336E0059C678 /* NPSCommentView.swift */,
+			);
+			name = "NPS Comment View";
+			sourceTree = "<group>";
+		};
+		63356A2A1C5298760064F652 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5A4721EF02FAB00113113 /* OpenHours.swift */,
+				63356A471C529C760064F652 /* AnnouncementAttributes.swift */,
+				63356A481C529C760064F652 /* CTA.swift */,
+				63356A491C529C760064F652 /* Campaign.swift */,
+				63356A4A1C529C760064F652 /* NPSAttributes.swift */,
+				6302051B1C52AD7900C02F5E /* Embed.swift */,
+				6302051D1C56739000C02F5E /* User.swift */,
+				63F95DBE1C5B8676003BCEE0 /* Auth.swift */,
+				6306B51D1C5F91150003F9D3 /* NPSResponseAttributes.swift */,
+				A80A64451D46655900A41A41 /* Inbox.swift */,
+				A80A64471D4665E500A41A41 /* Conversation.swift */,
+				A80A64491D46671B00A41A41 /* Message.swift */,
+				A80A644B1D466B3600A41A41 /* InboxSubscription.swift */,
+				A80A644D1D466B5E00A41A41 /* ConversationSubscription.swift */,
+				A80A644F1D466B7C00A41A41 /* MessageSubscription.swift */,
+				A82CCE0D1D4B731A0043D3C2 /* Attachment.swift */,
+				A8DECB331DF9AE5F00CE008D /* Context.swift */,
+				635462E91EDF204E0012358E /* SocketAuth.swift */,
+				A88682DC1EE982D600E396D8 /* EnrichedConversation.swift */,
+				A87272101EEAE16700A476FB /* CampaignWrapper.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		633920D11C6268EE00C3A3C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC1BAC1DDCB0DE0049968E /* GradientView.swift */,
+				63BBABB51C7CD6210014768A /* ColorHelper.swift */,
+				638730991C7E85EF00105867 /* TopController.swift */,
+				A80A643D1D464CDE00A41A41 /* ObjectValidator.swift */,
+				A80A64411D46534D00A41A41 /* DriftDateTransformer.swift */,
+				A86A47241D50D53F008C59C0 /* DriftDateFormatter.swift */,
+				A8B6FBAE1DE74631002F2321 /* ImageManager.swift */,
+				A8DECB351DF9B5BF00CE008D /* UIDevice+ModelName.swift */,
+				A8E705761EF28D6C00BC1429 /* OpenHoursHelpers.swift */,
+				A8E705821EF815C500BC1429 /* AvatarImage.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		634950CA1C511A410097C474 = {
+			isa = PBXGroup;
+			children = (
+				634950D61C511A410097C474 /* Drift */,
+				634950E21C511A410097C474 /* DriftTests */,
+				634950D51C511A410097C474 /* Products */,
+				74DE7736A181ADE78FB587A2 /* Frameworks */,
+				BDA453BC1886AFB2D80A1EF0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		634950D51C511A410097C474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				634950D41C511A410097C474 /* Drift.framework */,
+				634950DE1C511A410097C474 /* DriftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		634950D61C511A410097C474 /* Drift */ = {
+			isa = PBXGroup;
+			children = (
+				492F77E61F55A70200A05094 /* Birdsong */,
+				633920D11C6268EE00C3A3C2 /* Helpers */,
+				630E89631C57B2E400195062 /* UI */,
+				63356A2A1C5298760064F652 /* Models */,
+				634951271C51204C0097C474 /* Core */,
+				634951261C5120440097C474 /* Public */,
+				63356A3D1C529C530064F652 /* Drift.h */,
+				63356A3E1C529C530064F652 /* Info.plist */,
+			);
+			name = Drift;
+			path = Driftt;
+			sourceTree = "<group>";
+		};
+		634950E21C511A410097C474 /* DriftTests */ = {
+			isa = PBXGroup;
+			children = (
+				63356A501C529DD80064F652 /* Info.plist */,
+				631164F61C6124CE00DF9AD9 /* RequestTests.swift */,
+				6311F3531C89D18100F1F438 /* APITests.swift */,
+				632EC55A1C7E070B00D703D4 /* ModelTests.swift */,
+				632EC55C1C7E088300D703D4 /* JSONStore.swift */,
+			);
+			name = DriftTests;
+			path = DrifttTests;
+			sourceTree = "<group>";
+		};
+		634951261C5120440097C474 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				63356A411C529C610064F652 /* Drift.swift */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		634951271C51204C0097C474 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				635462E31EDF0C0B0012358E /* DriftAPIManager.swift */,
+				635462E41EDF0C0B0012358E /* DriftAPIURLRouter.swift */,
+				630205171C52A24E00C02F5E /* CampaignsManager.swift */,
+				630205191C52AC5100C02F5E /* DriftManager.swift */,
+				630E89611C57944400195062 /* PresentationManager.swift */,
+				6329CAC41C5A91310059C678 /* DriftDataStore.swift */,
+				633920CF1C62514F00C3A3C2 /* CampaignResponseManager.swift */,
+				63BBABB31C7C9D850014768A /* ErrorManager.swift */,
+				A80A64431D465E4800A41A41 /* InboxManager.swift */,
+				6306F42D1D63E68800722D15 /* UserManager.swift */,
+				635462E71EDF0F2B0012358E /* SocketManager.swift */,
+				A88682DA1EE9791B00E396D8 /* ConversationsManager.swift */,
+				A8E705781EF2C77900BC1429 /* ReachabilityManager.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		636242681C7FBC9700632F0E /* NPS Complete View */ = {
+			isa = PBXGroup;
+			children = (
+				636242691C7FBCB400632F0E /* NPSCompleteView.swift */,
+				6362426B1C7FBCC300632F0E /* NPSCompleteView.xib */,
+			);
+			name = "NPS Complete View";
+			sourceTree = "<group>";
+		};
+		74DE7736A181ADE78FB587A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8B6FBB21DE74AAB002F2321 /* Alamofire.framework */,
+				A8B6FBB01DE74A9A002F2321 /* AlamofireImage.framework */,
+				A82CF5671D42585D00D570FF /* ObjectMapper.framework */,
+				63C257381C9A00AE003C4C81 /* LayerKit.framework */,
+				63C257361C9A009E003C4C81 /* Gloss.framework */,
+				63356A531C52A0D20064F652 /* UIKit.framework */,
+				827DB2871F99163085B5B96C /* Pods_Drift.framework */,
+				376DB1A9D502953CD6D8325F /* Pods_DriftTests.framework */,
+				7D067B1B1C2147D16643E68C /* Pods_Drift_SDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A80A64541D47779400A41A41 /* Conversation List View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F589A01D478ECD0043DB8D /* List View Cell */,
+				A85387141D4A4F5100C1D3C1 /* ConversationListViewController.swift */,
+				A85387151D4A4F5100C1D3C1 /* ConversationListViewController.xib */,
+			);
+			name = "Conversation List View";
+			path = "Drift/UI/Conversation List View";
+			sourceTree = "<group>";
+		};
+		A85387181D4A8E8000C1D3C1 /* Conversation View */ = {
+			isa = PBXGroup;
+			children = (
+				A8B088801D4F51E300FFA469 /* Conversation Cells */,
+				A85387191D4A8EAE00C1D3C1 /* ConversationViewController.swift */,
+				A83E41661D50D20800B4EA35 /* MessageTableHeaderView.swift */,
+				A83E41651D50D20800B4EA35 /* MessageTableHeaderView.xib */,
+				A8C6ADEC1D632CD10024CFDC /* ConversationEmptyStateView.swift */,
+				A8C6ADEE1D632CED0024CFDC /* ConversationEmptyStateView.xib */,
+				A8E7057A1EF4051F00BC1429 /* ConnectionBarView.swift */,
+				A8E7057C1EF4054000BC1429 /* ConnectionBarView.xib */,
+			);
+			name = "Conversation View";
+			sourceTree = "<group>";
+		};
+		A8B088801D4F51E300FFA469 /* Conversation Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8E705841EF8192500BC1429 /* AttachmentCollectionViewCell.xib */,
+				A8E705851EF8192500BC1429 /* AttachmentCollectionViewCell.swift */,
+				A8E7057E1EF80BC700BC1429 /* ConversationMessageTableViewCell.xib */,
+				A8E7057F1EF80BC700BC1429 /* ConversationMessageTableViewCell.swift */,
+			);
+			name = "Conversation Cells";
+			path = "Drift/UI/Conversation View/Conversation Cells";
+			sourceTree = "<group>";
+		};
+		A8F589A01D478ECD0043DB8D /* List View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8F589A11D478F0A0043DB8D /* ConversationListTableViewCell.swift */,
+				A8F589A21D478F0A0043DB8D /* ConversationListTableViewCell.xib */,
+			);
+			path = "List View Cell";
+			sourceTree = "<group>";
+		};
+		BDA453BC1886AFB2D80A1EF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D05CA385937F3836AC8E1B8A /* Pods-Drift.debug.xcconfig */,
+				6CA1C57137B58327E8ED453E /* Pods-Drift.release.xcconfig */,
+				8E01BE3EE4C4FBBC0B0CF127 /* Pods-DriftTests.debug.xcconfig */,
+				B830EE3166A8EBB93E22850F /* Pods-DriftTests.release.xcconfig */,
+				0C22BE29447B902070F10D55 /* Pods-Drift-SDK.debug.xcconfig */,
+				0F7B8686E6ADBA835CE5CB39 /* Pods-Drift-SDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		634950D11C511A410097C474 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63356A3F1C529C530064F652 /* Drift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		634950D31C511A410097C474 /* Drift-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634950E81C511A410097C474 /* Build configuration list for PBXNativeTarget "Drift-SDK" */;
+			buildPhases = (
+				A99DC3508C7DE9FC0A16003C /* [CP] Check Pods Manifest.lock */,
+				634950CF1C511A410097C474 /* Sources */,
+				634950D01C511A410097C474 /* Frameworks */,
+				634950D11C511A410097C474 /* Headers */,
+				634950D21C511A410097C474 /* Resources */,
+				634951201C511D5A0097C474 /* Copy Frameworks */,
+				F24C6A9D00716292A2BE066D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drift-SDK";
+			productName = Driftt;
+			productReference = 634950D41C511A410097C474 /* Drift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		634950DD1C511A410097C474 /* DriftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634950EB1C511A410097C474 /* Build configuration list for PBXNativeTarget "DriftTests" */;
+			buildPhases = (
+				F4796389BBF7812A125D4B21 /* [CP] Check Pods Manifest.lock */,
+				634950DA1C511A410097C474 /* Sources */,
+				634950DB1C511A410097C474 /* Frameworks */,
+				634950DC1C511A410097C474 /* Resources */,
+				630144FC1C9A0F21002812AB /* ShellScript */,
+				EF46B69169D466EA66772977 /* [CP] Embed Pods Frameworks */,
+				571AB5D9D219E60CCD8F04D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				634950E11C511A410097C474 /* PBXTargetDependency */,
+			);
+			name = DriftTests;
+			productName = DrifttTests;
+			productReference = 634950DE1C511A410097C474 /* DriftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		634950CB1C511A410097C474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Drift;
+				TargetAttributes = {
+					634950D31C511A410097C474 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0900;
+					};
+					634950DD1C511A410097C474 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 634950CE1C511A410097C474 /* Build configuration list for PBXProject "Drift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 634950CA1C511A410097C474;
+			productRefGroup = 634950D51C511A410097C474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				634950D31C511A410097C474 /* Drift-SDK */,
+				634950DD1C511A410097C474 /* DriftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		634950D21C511A410097C474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630E896F1C57E64C00195062 /* NPSView.xib in Resources */,
+				2CF43EA71C7E056F008E6748 /* DriftImages.xcassets in Resources */,
+				A8E705861EF8192500BC1429 /* AttachmentCollectionViewCell.xib in Resources */,
+				A8C6ADEF1D632CED0024CFDC /* ConversationEmptyStateView.xib in Resources */,
+				630E89651C57B99000195062 /* AnnouncementView.xib in Resources */,
+				63359F9F1C774C31007321DA /* AnnouncementExpandedView.xib in Resources */,
+				A85387171D4A4F5100C1D3C1 /* ConversationListViewController.xib in Resources */,
+				A83E41671D50D20800B4EA35 /* MessageTableHeaderView.xib in Resources */,
+				6362426C1C7FBCC300632F0E /* NPSCompleteView.xib in Resources */,
+				A8F589A41D478F0A0043DB8D /* ConversationListTableViewCell.xib in Resources */,
+				A8E7057D1EF4054000BC1429 /* ConnectionBarView.xib in Resources */,
+				6306F4221D6379CC00722D15 /* NewMessageView.xib in Resources */,
+				6329CAC11C5933590059C678 /* NPSCommentView.xib in Resources */,
+				A8E705801EF80BC700BC1429 /* ConversationMessageTableViewCell.xib in Resources */,
+				6329CABE1C58E68F0059C678 /* NPSContainerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634950DC1C511A410097C474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		571AB5D9D219E60CCD8F04D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DriftTests/Pods-DriftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		630144FC1C9A0F21002812AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Checkouts/releases-ios/LayerKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		A99DC3508C7DE9FC0A16003C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drift-SDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF46B69169D466EA66772977 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DriftTests/Pods-DriftTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackTextViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DriftTests/Pods-DriftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24C6A9D00716292A2BE066D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drift-SDK/Pods-Drift-SDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4796389BBF7812A125D4B21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DriftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		634950CF1C511A410097C474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6329CABC1C58E6830059C678 /* NPSContainerView.swift in Sources */,
+				63BBABB61C7CD6210014768A /* ColorHelper.swift in Sources */,
+				635462E81EDF0F2B0012358E /* SocketManager.swift in Sources */,
+				A8E5A4741EF02FAB00113113 /* OpenHours.swift in Sources */,
+				633920D01C62514F00C3A3C2 /* CampaignResponseManager.swift in Sources */,
+				A8B6FBAF1DE74631002F2321 /* ImageManager.swift in Sources */,
+				A87272111EEAE16700A476FB /* CampaignWrapper.swift in Sources */,
+				A853871B1D4A8EAE00C1D3C1 /* ConversationViewController.swift in Sources */,
+				A85387161D4A4F5100C1D3C1 /* ConversationListViewController.swift in Sources */,
+				492F77EE1F55A72300A05094 /* Push.swift in Sources */,
+				A80A64461D46655900A41A41 /* Inbox.swift in Sources */,
+				63359F9D1C774C22007321DA /* AnnouncementExpandedView.swift in Sources */,
+				630205181C52A24E00C02F5E /* CampaignsManager.swift in Sources */,
+				A88682DD1EE982D600E396D8 /* EnrichedConversation.swift in Sources */,
+				630E896D1C57E63300195062 /* NPSView.swift in Sources */,
+				6306F4211D6379CC00722D15 /* NewMessageView.swift in Sources */,
+				6302051C1C52AD7900C02F5E /* Embed.swift in Sources */,
+				492F77EC1F55A72300A05094 /* Channel.swift in Sources */,
+				A80A64421D46534D00A41A41 /* DriftDateTransformer.swift in Sources */,
+				63356A4D1C529C760064F652 /* Campaign.swift in Sources */,
+				492F77EF1F55A72300A05094 /* Response.swift in Sources */,
+				630E89671C57B9AC00195062 /* AnnouncementView.swift in Sources */,
+				A8DECB341DF9AE5F00CE008D /* Context.swift in Sources */,
+				A8F589A31D478F0A0043DB8D /* ConversationListTableViewCell.swift in Sources */,
+				A8BC1BAD1DDCB0DE0049968E /* GradientView.swift in Sources */,
+				A8E705831EF815C500BC1429 /* AvatarImage.swift in Sources */,
+				A8E705811EF80BC700BC1429 /* ConversationMessageTableViewCell.swift in Sources */,
+				A80A64481D4665E500A41A41 /* Conversation.swift in Sources */,
+				63356A421C529C610064F652 /* Drift.swift in Sources */,
+				A8E705771EF28D6C00BC1429 /* OpenHoursHelpers.swift in Sources */,
+				635462EA1EDF204E0012358E /* SocketAuth.swift in Sources */,
+				633920D51C62879100C3A3C2 /* CampaignView.swift in Sources */,
+				2CF43EA31C7E045F008E6748 /* ColorPalette.swift in Sources */,
+				63BBABB41C7C9D850014768A /* ErrorManager.swift in Sources */,
+				630E89711C57E90300195062 /* NPSButton.swift in Sources */,
+				635462E61EDF0C0B0012358E /* DriftAPIURLRouter.swift in Sources */,
+				A8E705871EF8192500BC1429 /* AttachmentCollectionViewCell.swift in Sources */,
+				63356A4C1C529C760064F652 /* CTA.swift in Sources */,
+				A80A643E1D464CDE00A41A41 /* ObjectValidator.swift in Sources */,
+				6387309A1C7E85EF00105867 /* TopController.swift in Sources */,
+				A80A644E1D466B5E00A41A41 /* ConversationSubscription.swift in Sources */,
+				A80A64441D465E4800A41A41 /* InboxManager.swift in Sources */,
+				6302051A1C52AC5100C02F5E /* DriftManager.swift in Sources */,
+				63F95DBF1C5B8676003BCEE0 /* Auth.swift in Sources */,
+				A88682DB1EE9791B00E396D8 /* ConversationsManager.swift in Sources */,
+				A80A644C1D466B3600A41A41 /* InboxSubscription.swift in Sources */,
+				6306F42E1D63E68800722D15 /* UserManager.swift in Sources */,
+				6329CAC51C5A91310059C678 /* DriftDataStore.swift in Sources */,
+				492F77ED1F55A72300A05094 /* Presence.swift in Sources */,
+				6362426A1C7FBCB400632F0E /* NPSCompleteView.swift in Sources */,
+				6329CAC31C59336E0059C678 /* NPSCommentView.swift in Sources */,
+				A80A644A1D46671B00A41A41 /* Message.swift in Sources */,
+				630E89691C57C77300195062 /* NibLoader.swift in Sources */,
+				492F77F01F55A72300A05094 /* Socket.swift in Sources */,
+				630E89621C57944400195062 /* PresentationManager.swift in Sources */,
+				A8DECB361DF9B5BF00CE008D /* UIDevice+ModelName.swift in Sources */,
+				A8E7057B1EF4051F00BC1429 /* ConnectionBarView.swift in Sources */,
+				A8C6ADED1D632CD10024CFDC /* ConversationEmptyStateView.swift in Sources */,
+				63356A4B1C529C760064F652 /* AnnouncementAttributes.swift in Sources */,
+				A83E41681D50D20800B4EA35 /* MessageTableHeaderView.swift in Sources */,
+				63356A4E1C529C760064F652 /* NPSAttributes.swift in Sources */,
+				A86A47251D50D53F008C59C0 /* DriftDateFormatter.swift in Sources */,
+				A82CCE0E1D4B731A0043D3C2 /* Attachment.swift in Sources */,
+				6302051E1C56739000C02F5E /* User.swift in Sources */,
+				A8E705791EF2C77900BC1429 /* ReachabilityManager.swift in Sources */,
+				6306B51E1C5F91150003F9D3 /* NPSResponseAttributes.swift in Sources */,
+				A80A64501D466B7C00A41A41 /* MessageSubscription.swift in Sources */,
+				635462E51EDF0C0B0012358E /* DriftAPIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634950DA1C511A410097C474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632EC55D1C7E088300D703D4 /* JSONStore.swift in Sources */,
+				632EC55B1C7E070B00D703D4 /* ModelTests.swift in Sources */,
+				6311F3541C89D18100F1F438 /* APITests.swift in Sources */,
+				631164F71C6124CE00DF9AD9 /* RequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		634950E11C511A410097C474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 634950D31C511A410097C474 /* Drift-SDK */;
+			targetProxy = 634950E01C511A410097C474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		634950E61C511A410097C474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		634950E71C511A410097C474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		634950E91C511A410097C474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C22BE29447B902070F10D55 /* Pods-Drift-SDK.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherit)";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/releases-ios",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireImage",
+				);
+				INFOPLIST_FILE = Drift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drift.Drift-SDK";
+				PRODUCT_NAME = Drift;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		634950EA1C511A410097C474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7B8686E6ADBA835CE5CB39 /* Pods-Drift-SDK.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherit)";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/releases-ios",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireImage",
+				);
+				INFOPLIST_FILE = Drift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.drift.Drift-SDK";
+				PRODUCT_NAME = Drift;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		634950EC1C511A410097C474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E01BE3EE4C4FBBC0B0CF127 /* Pods-DriftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherit)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/releases-ios",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DriftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drift.DriftTests;
+				PRODUCT_NAME = DriftTests;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		634950ED1C511A410097C474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B830EE3166A8EBB93E22850F /* Pods-DriftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherit)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/releases-ios",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DriftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drift.DriftTests;
+				PRODUCT_NAME = DriftTests;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		634950CE1C511A410097C474 /* Build configuration list for PBXProject "Drift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634950E61C511A410097C474 /* Debug */,
+				634950E71C511A410097C474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634950E81C511A410097C474 /* Build configuration list for PBXNativeTarget "Drift-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634950E91C511A410097C474 /* Debug */,
+				634950EA1C511A410097C474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634950EB1C511A410097C474 /* Build configuration list for PBXNativeTarget "DriftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634950EC1C511A410097C474 /* Debug */,
+				634950ED1C511A410097C474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 634950CB1C511A410097C474 /* Project object */;
+}
